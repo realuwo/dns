@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozy DNS - Block Apple Cert Checks</title>
-    <!-- Tailwind CSS CDN -->
+    <title>FL7 DNS - Block Apple Cert Checks</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom CSS for Glass UI and Animations */
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1A001A, #0A000A, #1A001A); /* Dark purple to black gradient */
+            background: linear-gradient(135deg, #1A001A, #0A000A, #1A001A);
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
-            color: #E0E0E0; /* Light gray for text */
-            overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+            color: #E0E0E0;
+            overflow-x: hidden;
         }
 
         @keyframes gradientAnimation {
@@ -26,32 +23,31 @@
         }
 
         .glass-effect {
-            background-color: rgba(255, 255, 255, 0.05); /* Very subtle white background */
-            backdrop-filter: blur(15px); /* Stronger blur for glass */
-            -webkit-backdrop-filter: blur(15px); /* Safari support */
-            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Darker shadow for depth */
-            border-radius: 20px; /* More rounded corners */
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border-radius: 20px;
         }
 
         .hover-scale-shadow:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 12px 24px rgba(128, 0, 128, 0.4); /* Purple shadow on hover */
+            box-shadow: 0 12px 24px rgba(128, 0, 128, 0.4);
         }
 
         .animated-gradient-button {
-            background: linear-gradient(90deg, #8A2BE2, #9932CC); /* Initial purple gradient */
+            background: linear-gradient(90deg, #8A2BE2, #9932CC);
             background-size: 200% 100%;
             transition: background-position 0.4s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
 
         .animated-gradient-button:hover {
-            background-position: -100% 0; /* Shift gradient on hover */
+            background-position: -100% 0;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 43, 226, 0.5); /* Stronger purple shadow */
+            box-shadow: 0 10px 20px rgba(138, 43, 226, 0.5);
         }
 
-        /* Keyframe animation for subtle glow on elements */
         @keyframes subtleGlow {
             0% { box-shadow: 0 0 5px rgba(138, 43, 226, 0.3); }
             50% { box-shadow: 0 0 15px rgba(138, 43, 226, 0.6); }
@@ -62,7 +58,6 @@
             animation: subtleGlow 3s ease-in-out infinite alternate;
         }
 
-        /* Scroll animation for sections */
         .fade-in-up {
             opacity: 0;
             transform: translateY(20px);
@@ -77,13 +72,12 @@
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4">
 
-    <!-- Header Section -->
     <header class="w-full max-w-6xl p-6 mb-12 flex justify-between items-center glass-effect glow-on-load">
         <div class="flex items-center">
             <svg class="w-10 h-10 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>
-            <h1 class="text-3xl font-bold text-purple-300">Cozy DNS</h1>
+            <h1 class="text-3xl font-bold text-purple-300">FL7 DNS</h1>
         </div>
         <nav>
             <ul class="flex space-x-6">
@@ -94,26 +88,23 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="w-full max-w-4xl text-center py-20 glass-effect glow-on-load mb-12 hover-scale-shadow transition duration-300">
         <h2 class="text-5xl font-extrabold text-purple-200 mb-6 leading-tight">
             Regain Control: <span class="text-purple-400">Block Unwanted Apple Certificate Checks</span>
         </h2>
         <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
             Experience a more private and secure online journey by preventing unnecessary certificate validation requests from Apple domains.
-            Cozy DNS offers a simple, effective solution.
+            FL7 DNS offers a simple, effective solution.
         </p>
         <button id="downloadButton" class="animated-gradient-button text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50">
-            Download Cozy DNS Profile
+            Download FL7 DNS Profile
         </button>
         <p class="text-sm text-gray-400 mt-4">Compatible with iOS, macOS, and more.</p>
     </section>
 
-    <!-- Useful Features Section -->
     <section id="features" class="w-full max-w-6xl py-16 mb-12 fade-in-up">
         <h3 class="text-4xl font-bold text-purple-300 text-center mb-12">Useful Features</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Feature Card 1 -->
             <div class="glass-effect p-8 rounded-2xl text-center hover-scale-shadow transition duration-300">
                 <svg class="w-16 h-16 text-purple-400 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -123,7 +114,6 @@
                     Minimize data leakage by preventing your devices from contacting Apple servers for certificate validation.
                 </p>
             </div>
-            <!-- Feature Card 2 -->
             <div class="glass-effect p-8 rounded-2xl text-center hover-scale-shadow transition duration-300">
                 <svg class="w-16 h-16 text-purple-400 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.79z"/>
@@ -133,7 +123,6 @@
                     Reduce potential attack vectors by controlling which external services your devices communicate with.
                 </p>
             </div>
-            <!-- Feature Card 3 -->
             <div class="glass-effect p-8 rounded-2xl text-center hover-scale-shadow transition duration-300">
                 <svg class="w-16 h-16 text-purple-400 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 0h-2V8h2v4z"/>
@@ -146,9 +135,8 @@
         </div>
     </section>
 
-    <!-- Why You Should Use It Section -->
     <section id="why-us" class="w-full max-w-6xl py-16 mb-12 fade-in-up">
-        <h3 class="text-4xl font-bold text-purple-300 text-center mb-12">Why Choose Cozy DNS?</h3>
+        <h3 class="text-4xl font-bold text-purple-300 text-center mb-12">Why Choose FL7 DNS?</h3>
         <div class="glass-effect p-10 rounded-2xl flex flex-col lg:flex-row items-center lg:space-x-10 hover-scale-shadow transition duration-300">
             <div class="lg:w-1/2 mb-8 lg:mb-0">
                 <img src="https://placehold.co/600x400/3A003A/E0E0E0?text=Secure+Your+Digital+Life" alt="Secure Digital Life" class="rounded-lg shadow-xl border border-purple-700">
@@ -157,7 +145,7 @@
                 <p class="text-xl text-gray-300 leading-relaxed mb-6">
                     In today's digital landscape, privacy is paramount. Many systems, including those from major tech companies,
                     routinely perform background checks that can inadvertently reveal information about your online activity.
-                    Cozy DNS provides a straightforward yet powerful way to curtail these specific communications.
+                    FL7 DNS provides a straightforward yet powerful way to curtail these specific communications.
                 </p>
                 <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
                     <li><strong class="text-purple-300">Uninterrupted Experience:</strong> Blocks only specific certificate validation domains, ensuring your other Apple services function normally.</li>
@@ -169,16 +157,15 @@
         </div>
     </section>
 
-    <!-- Contact/Footer Section -->
     <footer id="contact" class="w-full max-w-6xl p-8 mt-12 text-center glass-effect glow-on-load">
         <p class="text-gray-400 text-lg mb-4">
             Questions? Suggestions? Reach out to us!
         </p>
         <p class="text-purple-300 text-xl font-semibold">
-            support@cozydns.com
+            mdmnserver@gmail.com
         </p>
         <p class="text-gray-500 text-sm mt-6">
-            &copy; 2025 Cozy DNS. All rights reserved.
+            &copy; 2025 FL7 DNS. All rights reserved.
         </p>
     </footer>
 
@@ -186,26 +173,23 @@
         document.addEventListener('DOMContentLoaded', () => {
             const downloadButton = document.getElementById('downloadButton');
 
-            // Function to download the FL7.mobileconfig file
             downloadButton.addEventListener('click', () => {
-                const filename = 'FL7.mobileconfig'; // The name of the file in the same directory
+                const filename = 'FL7.mobileconfig';
 
-                // Create a temporary anchor element
                 const a = document.createElement('a');
-                a.href = filename; // Set the href directly to the file name
-                a.download = filename; // Suggest the filename for download
-                document.body.appendChild(a); // Append to body (required for Firefox)
-                a.click(); // Programmatically click the link to trigger download
-                document.body.removeChild(a); // Clean up the temporary element
+                a.href = filename;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
 
                 console.log('Download initiated for: ' + filename);
             });
 
-            // Intersection Observer for scroll animations
             const faders = document.querySelectorAll('.fade-in-up');
             const appearOptions = {
-                threshold: 0.1, // Trigger when 10% of the element is visible
-                rootMargin: "0px 0px -50px 0px" // Adjust to trigger slightly earlier
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
             };
 
             const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
@@ -214,7 +198,7 @@
                         return;
                     } else {
                         entry.target.classList.add('visible');
-                        appearOnScroll.unobserve(entry.target); // Stop observing once visible
+                        appearOnScroll.unobserve(entry.target);
                     }
                 });
             }, appearOptions);

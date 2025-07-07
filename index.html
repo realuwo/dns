@@ -171,31 +171,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const filename = 'FL7.mobileconfig';
+            const downloadButton = document.getElementById('downloadButton');
 
             downloadButton.addEventListener('click', () => {
-                const filename = 'FL7.mobileconfig';
-                const content = `
-# FL7 DNS Configuration Profile
-# This is a placeholder for your actual DNS configuration.
-# In a real scenario, this would contain DNS settings or a .mobileconfig profile.
-
-# To set up FL7 DNS:
-# 1. Open your device's network settings.
-# 2. Locate the DNS configuration.
-# 3. Enter the FL7 DNS server addresses (e.g., 192.168.1.1, 8.8.8.8).
-#    (Note: Actual DNS addresses would be provided here)
-# 4. Save the changes.
-
-# This DNS service is designed to block specific Apple certificate validation domains
-# to enhance your privacy.
-
-# For more information, visit: www.FL7dns.com
-`;
-
-                const blob = new Blob([content], { type: 'text/plain' });
-                const url = URL.createObjectURL(blob);
-
+                const filename = 'FL7.mobileconfig'
+                a.href = filename;
+                
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = filename;
